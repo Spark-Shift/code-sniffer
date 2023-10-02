@@ -1,0 +1,7 @@
+parameters:
+    tmpDir: tmp
+    level: 9
+    checkGenericClassInNonGenericObjectType: false
+    checkMissingIterableValueType: false
+    paths:
+        - src

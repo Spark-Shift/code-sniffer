@@ -1,0 +1,24 @@
+{
+    "name": "spark-shift/code-sniffer",
+    "type": "library",
+    "description": "Codesniffer module",
+    "require": {
+        "php": ">=8.0",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7",
+        "slevomat/coding-standard": "^8.13"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {},
+    "scripts": {
+        "phpstan": "phpstan analyze",
+        "cs": "phpcs -p -s --standard=phpcs-ruleset.xml src/",
+        "csfix": "phpcbf -p --standard=phpcs-ruleset.xml src/"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
